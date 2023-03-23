@@ -1,0 +1,29 @@
+.works {
+  padding: 80px 100px 50px 100px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark);
+}
+
+@media (max-width: 768px) {
+  .works {
+    padding: 80px 50px 50px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .works {
+    padding: 80px 20px 50px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 20px;
+  }
+}

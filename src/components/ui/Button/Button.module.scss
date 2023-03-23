@@ -1,0 +1,60 @@
+.btn {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px 0;
+  background-color: var(--green);
+  // width: 250px;
+  height: 40px;
+  padding: 10px 0;
+  // border: 1px solid var(--dark_green);
+  border-radius: 4px;
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--dark_green);
+  }
+}
+
+.btnText {
+  font-size: 15px;
+}
+
+.icon {
+  position: absolute;
+  right: -15px;
+}
+
+.formBtn {
+  width: calc(50% - 18px);
+}
+
+.loading {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+@media (max-width: 576px) {
+  .formBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-height: 360px) {
+  .btn {
+    margin: 10px 0;
+  }
+}

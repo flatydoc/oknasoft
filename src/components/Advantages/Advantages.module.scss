@@ -1,0 +1,163 @@
+.advantages {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  text-align: center;
+
+  background-color: var(--background);
+
+  background: linear-gradient(
+      160deg,
+      var(--background) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../../assets/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.title {
+  padding: 0 50px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--green);
+  text-align: center;
+}
+
+.subtitle {
+  padding: 0 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 50px 100px;
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: 300px;
+  padding: 20px;
+
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    backdrop-filter: blur(5px);
+
+    .cardSubtitle {
+      height: 100px;
+      transform: translateY(-50px);
+    }
+
+    .cardTitle {
+      transform: translateY(-70px);
+    }
+    .cardImg {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+  }
+}
+
+.cardTitle {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+
+  transition: all 0.5s ease;
+}
+
+.cardImg {
+  margin: 20px 0;
+
+  width: 60px;
+  height: 60px;
+
+  transition: all 0.5s ease;
+}
+
+.cardSubtitle {
+  position: relative;
+  height: 0;
+  color: #fff;
+  line-height: 120%;
+  transform: translateY(300px);
+  padding-top: 20px;
+
+  transition: all 0.5s ease;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: var(--green);
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 50px 20px;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 20px 50px;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .advantages {
+    padding-top: 60px;
+  }
+
+  .wrapper {
+    padding: 20px 20px;
+  }
+
+  .title {
+    padding: 0 20px;
+
+    font-size: 20px;
+  }
+
+  .subtitle {
+    padding: 0 20px;
+
+    font-size: 20px;
+  }
+}

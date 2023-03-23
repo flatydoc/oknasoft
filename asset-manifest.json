@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/oknasoft/static/css/main.e75dbd5b.css",
+    "main.js": "/oknasoft/static/js/main.9a1a3284.js",
+    "static/media/bg.jpg": "/oknasoft/static/media/bg.8a30561c83492e117141.jpg",
+    "static/media/primeicons.svg": "/oknasoft/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/main_bg.jpeg": "/oknasoft/static/media/main_bg.ca1056f686cf1e92cf05.jpeg",
+    "static/media/primeicons.eot": "/oknasoft/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/oknasoft/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/oknasoft/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/window.svg": "/oknasoft/static/media/window.7bb368a6589fc9698959f7ccde7fe17f.svg",
+    "static/media/consult.svg": "/oknasoft/static/media/consult.529ac38df94d8e6ff100504b74c33332.svg",
+    "static/media/primeicons.woff2": "/oknasoft/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/reviews.svg": "/oknasoft/static/media/reviews.3939d51c4b9346bd7af98ce902535f53.svg",
+    "static/media/calculator.svg": "/oknasoft/static/media/calculator.d0c7f0f37b1b65710e340d8572e11c1b.svg",
+    "static/media/viber.svg": "/oknasoft/static/media/viber.7d2a03acff561389956793791bb9b091.svg",
+    "static/media/feedback.svg": "/oknasoft/static/media/feedback.fb642b2493151d2df9cd.svg",
+    "static/media/slick.svg": "/oknasoft/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/oknasoft/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/oknasoft/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/oknasoft/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/support_agent.svg": "/oknasoft/static/media/support_agent.a98c03d2d17914971f0836cabee4946a.svg",
+    "static/media/telegram.svg": "/oknasoft/static/media/telegram.2101cb3fe69a6ab0f8f26f1f935a21ed.svg",
+    "index.html": "/oknasoft/index.html",
+    "static/media/phone.svg": "/oknasoft/static/media/phone.9f913cb2485c7a064d59b3195b7c33ac.svg",
+    "static/media/phone_white.svg": "/oknasoft/static/media/phone_white.e725dab4bb2dec040df425d20c96c908.svg",
+    "static/media/cross.svg": "/oknasoft/static/media/cross.4aa9c0d367a718b38dbc.svg",
+    "main.e75dbd5b.css.map": "/oknasoft/static/css/main.e75dbd5b.css.map",
+    "main.9a1a3284.js.map": "/oknasoft/static/js/main.9a1a3284.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e75dbd5b.css",
+    "static/js/main.9a1a3284.js"
+  ]
+}

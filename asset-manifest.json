@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/oknasoft/static/css/main.0c664646.css",
-    "main.js": "/oknasoft/static/js/main.7bb4fd51.js",
+    "main.css": "/oknasoft/static/css/main.aa23be7a.css",
+    "main.js": "/oknasoft/static/js/main.50910e13.js",
     "static/media/head_video.mp4": "/oknasoft/static/media/head_video.2968216feacc8798f3f0.mp4",
-    "static/media/bg.jpg": "/oknasoft/static/media/bg.8a30561c83492e117141.jpg",
+    "static/media/111.jpg": "/oknasoft/static/media/111.530387442235a565e451.jpg",
     "static/media/primeicons.svg": "/oknasoft/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/main_bg.jpeg": "/oknasoft/static/media/main_bg.ca1056f686cf1e92cf05.jpeg",
     "static/media/primeicons.eot": "/oknasoft/static/media/primeicons.d44157bdfa026dc877af.eot",
@@ -28,11 +28,11 @@
     "static/media/phone.svg": "/oknasoft/static/media/phone.9f913cb2485c7a064d59b3195b7c33ac.svg",
     "static/media/phone_white.svg": "/oknasoft/static/media/phone_white.e725dab4bb2dec040df425d20c96c908.svg",
     "static/media/cross.svg": "/oknasoft/static/media/cross.4aa9c0d367a718b38dbc.svg",
-    "main.0c664646.css.map": "/oknasoft/static/css/main.0c664646.css.map",
-    "main.7bb4fd51.js.map": "/oknasoft/static/js/main.7bb4fd51.js.map"
+    "main.aa23be7a.css.map": "/oknasoft/static/css/main.aa23be7a.css.map",
+    "main.50910e13.js.map": "/oknasoft/static/js/main.50910e13.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c664646.css",
-    "static/js/main.7bb4fd51.js"
+    "static/css/main.aa23be7a.css",
+    "static/js/main.50910e13.js"
   ]
 }

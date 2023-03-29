@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/oknasoft/static/css/main.93368de6.css",
-    "main.js": "/oknasoft/static/js/main.d414fb2c.js",
+    "main.css": "/oknasoft/static/css/main.0c664646.css",
+    "main.js": "/oknasoft/static/js/main.7bb4fd51.js",
+    "static/media/head_video.mp4": "/oknasoft/static/media/head_video.2968216feacc8798f3f0.mp4",
     "static/media/bg.jpg": "/oknasoft/static/media/bg.8a30561c83492e117141.jpg",
     "static/media/primeicons.svg": "/oknasoft/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/main_bg.jpeg": "/oknasoft/static/media/main_bg.ca1056f686cf1e92cf05.jpeg",
@@ -9,9 +10,10 @@
     "static/media/primeicons.woff": "/oknasoft/static/media/primeicons.10d3152104f2208ac82a.woff",
     "static/media/primeicons.ttf": "/oknasoft/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
     "static/media/window.svg": "/oknasoft/static/media/window.7bb368a6589fc9698959f7ccde7fe17f.svg",
+    "static/media/reviews.svg": "/oknasoft/static/media/reviews.6f8d8fc2bdf27ae1dac8a022169e5bcc.svg",
     "static/media/consult.svg": "/oknasoft/static/media/consult.529ac38df94d8e6ff100504b74c33332.svg",
     "static/media/primeicons.woff2": "/oknasoft/static/media/primeicons.78172950b335ccdb94e2.woff2",
-    "static/media/reviews.svg": "/oknasoft/static/media/reviews.3939d51c4b9346bd7af98ce902535f53.svg",
+    "static/media/iiisometric.svg": "/oknasoft/static/media/iiisometric.9c3c6a5cd031f0172aab.svg",
     "static/media/questions.svg": "/oknasoft/static/media/questions.b39930651bdcc1840848aac254476366.svg",
     "static/media/calculator.svg": "/oknasoft/static/media/calculator.f8fb5629ebb5929793753da53c1acbcb.svg",
     "static/media/viber.svg": "/oknasoft/static/media/viber.7d2a03acff561389956793791bb9b091.svg",
@@ -26,11 +28,11 @@
     "static/media/phone.svg": "/oknasoft/static/media/phone.9f913cb2485c7a064d59b3195b7c33ac.svg",
     "static/media/phone_white.svg": "/oknasoft/static/media/phone_white.e725dab4bb2dec040df425d20c96c908.svg",
     "static/media/cross.svg": "/oknasoft/static/media/cross.4aa9c0d367a718b38dbc.svg",
-    "main.93368de6.css.map": "/oknasoft/static/css/main.93368de6.css.map",
-    "main.d414fb2c.js.map": "/oknasoft/static/js/main.d414fb2c.js.map"
+    "main.0c664646.css.map": "/oknasoft/static/css/main.0c664646.css.map",
+    "main.7bb4fd51.js.map": "/oknasoft/static/js/main.7bb4fd51.js.map"
   },
   "entrypoints": [
-    "static/css/main.93368de6.css",
-    "static/js/main.d414fb2c.js"
+    "static/css/main.0c664646.css",
+    "static/js/main.7bb4fd51.js"
   ]
 }

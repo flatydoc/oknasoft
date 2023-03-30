@@ -1,5 +1,6 @@
 .reviews {
   padding: 80px 100px 50px 100px;
+  box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.11) inset;
 }
 
 .wrapper {
@@ -14,7 +15,7 @@
 .title {
   margin-right: 20px;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
   color: var(--dark);
 }
@@ -54,6 +55,8 @@
   color: var(--dark);
   border: 1px solid var(--dark);
   border-radius: 4px;
+  backdrop-filter: blur(5px);
+  background-color: #ffffff86;
 }
 
 @media (max-width: 1024px) {
@@ -87,6 +90,9 @@
 @media (max-width: 576px) {
   .reviews {
     padding: 80px 20px 50px 20px;
+  }
+  .img {
+    width: 80%;
   }
 }
 

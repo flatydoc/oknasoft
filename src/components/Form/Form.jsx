@@ -66,13 +66,13 @@ export const Form = ({ formRef }) => {
 
   const onSubmit = async (data) => {
     load();
+    console.log(data);
     try {
       await FormService.send(data);
       setTimeout(() => {
         showSuccess();
         reset();
       }, 1000);
-      console.log(data);
     } catch (error) {
       setTimeout(() => {
         showError();
@@ -86,7 +86,7 @@ export const Form = ({ formRef }) => {
       <h2 className={styles.title}>
         DARMOWA KONSULTACJA
         <br />
-        <span style={{ color: "var(--dark_green)" }}>NASZEGO SPECJALISTY</span>
+        <span style={{ color: "var(--dark)" }}>NASZEGO SPECJALISTY</span>
       </h2>
       <div className={styles.wrapper}>
         <img className={styles.img} src={image} alt="#" />
@@ -117,7 +117,10 @@ export const Form = ({ formRef }) => {
                         )}
                         onChange={(e) => field.onChange(e.target.value)}
                       />
-                      <label style={{ color: "#acb4c3" }} htmlFor={field.name}>
+                      <label
+                        style={{ color: "var(--dark)" }}
+                        htmlFor={field.name}
+                      >
                         Imię
                       </label>
                     </span>
@@ -146,7 +149,10 @@ export const Form = ({ formRef }) => {
                         value={field.value}
                         mask="+48 (999) 999-999"
                       />
-                      <label style={{ color: "#acb4c3" }} htmlFor={field.phone}>
+                      <label
+                        style={{ color: "var(--dark)" }}
+                        htmlFor={field.phone}
+                      >
                         Telefon
                       </label>
                     </span>
@@ -172,7 +178,10 @@ export const Form = ({ formRef }) => {
                       value={field.value}
                       onChange={(e) => field.onChange(e.target.value)}
                     />
-                    <label style={{ color: "#acb4c3" }} htmlFor={field.text}>
+                    <label
+                      style={{ color: "var(--dark)" }}
+                      htmlFor={field.text}
+                    >
                       Krótko opisz istotę pytania
                     </label>
                   </span>

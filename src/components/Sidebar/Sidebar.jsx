@@ -33,11 +33,11 @@ export const Sidebar = ({
         <button onClick={scrollToAdv} className={styles.sidebarItem}>
           NASZE ATUTY
         </button>
-        <button onClick={scrollToWorks} className={styles.sidebarItem}>
-          NASZA PRACA
-        </button>
         <button onClick={scrollToCalc} className={styles.sidebarItem}>
           KALKULACJA KOSZTÓW
+        </button>
+        <button onClick={scrollToWorks} className={styles.sidebarItem}>
+          NASZA PRACA
         </button>
         <button onClick={scrollToRev} className={styles.sidebarItem}>
           RECENZJE KLIENTÓW

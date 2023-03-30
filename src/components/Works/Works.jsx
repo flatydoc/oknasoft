@@ -51,7 +51,12 @@ export const Works = ({ worksRef }) => {
 
       <Slider {...settings} ref={sliderRef}>
         {slides.map((slide, index) => (
-          <img key={index} src={slide.src} alt={slide.alt} />
+          <img
+            className={styles.img}
+            key={index}
+            src={slide.src}
+            alt={slide.alt}
+          />
         ))}
       </Slider>
     </section>

@@ -1,19 +1,18 @@
 .consult {
   padding: 80px 100px 25px 100px;
-  background-color: var(--green);
+  color: var(--dark);
 }
 
 .title {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 40px;
-  color: #fff;
+  color: var(--green);
 }
 
 .subtitle {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-size: 18px;
-  color: #000;
 }
 
 .wrapper {
@@ -32,13 +31,25 @@
   margin-left: 50px;
 }
 
-.formItem {
+.flexRow {
   margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.formItem {
+  label {
+    font-size: 12px;
+  }
+}
+
+.buttons {
+  margin-top: 10px;
 }
 
 .input {
   width: 100%;
-  background-color: #fff;
   resize: none;
 }
 
@@ -54,14 +65,13 @@
   justify-content: center;
 
   margin: 20px 0;
-  background-color: #fff;
+  background-color: var(--green);
   width: calc(50% - 18px);
   height: 40px;
   padding: 10px 0;
-  border: 1px solid var(--dark_green);
   border-radius: 4px;
   font-weight: 600;
-  color: var(--green);
+  color: #fff;
 
   font-size: 15px;
 
@@ -146,6 +156,14 @@
       width: 100%;
       margin: 0;
     }
+  }
+  .flexRow {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .img {
+    width: 80%;
   }
 }
 @media (max-width: 360px) {

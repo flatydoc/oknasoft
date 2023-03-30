@@ -7,6 +7,7 @@
   font-weight: 600;
   font-size: 40px;
   color: var(--green);
+  padding: 0 25px;
 }
 
 .subtitle {
@@ -39,6 +40,8 @@
   width: 100%;
   background-color: transparent;
   resize: none;
+  border: 1px solid var(--dark_green);
+  background-color: #ffffff86;
 }
 
 .flex {
@@ -85,7 +88,9 @@
   .consult {
     padding: 80px 25px 25px 25px;
   }
-
+  .title {
+    font-size: 30px;
+  }
   .formWrapper {
     padding: 20px;
   }
@@ -97,14 +102,15 @@
       margin: 0;
     }
   }
+  .img {
+    width: 80%;
+  }
 }
 @media (max-width: 360px) {
   .consult {
     padding: 80px 0 25px 0;
   }
-  .title {
-    font-size: 30px;
-  }
+
   .subtitle {
     text-align: center;
   }

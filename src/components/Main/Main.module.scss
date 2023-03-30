@@ -4,7 +4,17 @@
   background-color: rgb(30, 30, 30);
   color: #fff;
 
-  background-image: url(../../assets/images/main_bg.jpeg);
+  // background-image: url(../../assets/images/main_bg.jpeg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position-y: center;
+  // background-position-x: center;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../../assets/images/main_bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -56,8 +66,17 @@
 @media (max-width: 576px) {
 }
 
+@media (max-height: 576px) {
+  .main {
+    height: auto;
+  }
+}
+
 @media (max-width: 400px) {
   .main {
     padding: 100px 20px;
+  }
+  .title {
+    font-size: 30px;
   }
 }

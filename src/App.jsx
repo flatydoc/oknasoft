@@ -7,7 +7,7 @@ import { HomePage } from "./pages/HomePage/HomePage";
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -16,6 +16,6 @@ export const App = () => {
           </Route>
         </Routes>
       </>
-    </BrowserRouter>
+    </HashRouter>
   );
 };

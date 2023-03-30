@@ -5,9 +5,13 @@ import { classNames } from "primereact/utils";
 import { Toast } from "primereact/toast";
 import { InputText } from "primereact/inputtext";
 import { InputMask } from "primereact/inputmask";
+import { InputNumber } from "primereact/inputnumber";
 import { SelectButton } from "primereact/selectbutton";
 import image from "../../assets/images/calculator.svg";
 import { FormService } from "../../core/services/form.service";
+import { Button } from "../ui/Button/Button";
+
+import { InputSwitch } from "primereact/inputswitch";
 
 export const Calculator = ({ calcRef }) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -46,11 +50,9 @@ export const Calculator = ({ calcRef }) => {
     phone: "",
     square: "",
     length: "",
-    instalacja: "",
-    zamek: "",
+    instalacja: false,
+    zamek: false,
   };
-
-  const options = ["Tak", "Nie"];
 
   const {
     control,
@@ -91,7 +93,7 @@ export const Calculator = ({ calcRef }) => {
       <h2 className={styles.title}>
         KALKULACJA KOSZTÓW
         <br />
-        <span>PRZYBLIŻONY KOSZT TERAZ</span>
+        <span style={{ color: "var(--dark)" }}>PRZYBLIŻONY KOSZT TERAZ</span>
       </h2>
       <div className={styles.wrapper}>
         <img className={styles.img} src={image} alt="#" />
@@ -122,7 +124,10 @@ export const Calculator = ({ calcRef }) => {
                         )}
                         onChange={(e) => field.onChange(e.target.value)}
                       />
-                      <label style={{ color: "#000" }} htmlFor={field.name}>
+                      <label
+                        style={{ color: "var(--dark)" }}
+                        htmlFor={field.name}
+                      >
                         Imię
                       </label>
                     </span>
@@ -151,7 +156,10 @@ export const Calculator = ({ calcRef }) => {
                         value={field.value}
                         mask="+48 (999) 999-999"
                       />
-                      <label style={{ color: "#000" }} htmlFor={field.phone}>
+                      <label
+                        style={{ color: "var(--dark)" }}
+                        htmlFor={field.phone}
+                      >
                         Telefon
                       </label>
                     </span>
@@ -167,11 +175,11 @@ export const Calculator = ({ calcRef }) => {
                 render={({ field, fieldState }) => (
                   <div className={styles.formItem}>
                     <label className={styles.label} htmlFor={field.square}>
-                      Podaj całkowitą powierzchnię <br /> otworów do zamknięcia
+                      Podaj całkowitą powierzchnię otworów do zamknięcia
                     </label>
-                    <InputText
+                    <InputNumber
                       className={classNames(styles.input, styles.inputNum)}
-                      onChange={(e) => field.onChange(e.target.value)}
+                      onValueChange={(e) => field.onChange(e.target.value)}
                       id={field.square}
                       value={field.value}
                     />
@@ -184,11 +192,11 @@ export const Calculator = ({ calcRef }) => {
                 render={({ field, fieldState }) => (
                   <div className={styles.formItem}>
                     <label className={styles.label} htmlFor={field.length}>
-                      Wpisz liczbę metrów <br /> bieżących pioruna
+                      Wpisz liczbę metrów bieżących błyskawicy
                     </label>
-                    <InputText
+                    <InputNumber
                       className={classNames(styles.input, styles.inputNum)}
-                      onChange={(e) => field.onChange(e.target.value)}
+                      onValueChange={(e) => field.onChange(e.target.value)}
                       id={field.length}
                       value={field.value}
                     />
@@ -197,44 +205,45 @@ export const Calculator = ({ calcRef }) => {
               />
             </div>
 
-            <Controller
-              name="instalacja"
-              control={control}
-              render={({ field, fieldState }) => (
-                <div className={styles.formItem}>
-                  <label className={styles.label} htmlFor={field.instalacja}>
-                    Engine State
-                  </label>
-                  <SelectButton
-                    id={field.instalacja}
-                    options={options}
-                    {...field}
-                  />
-                </div>
-              )}
-            />
-            <Controller
-              name="zamek"
-              control={control}
-              render={({ field, fieldState }) => (
-                <div className={styles.formItem}>
-                  <label className={styles.label} htmlFor={field.zamek}>
-                    Drzwi z zamkiem
-                  </label>
-                  <SelectButton id={field.zamek} options={options} {...field} />
-                </div>
-              )}
-            />
+            <div className={styles.flexRow}>
+              <Controller
+                name="instalacja"
+                control={control}
+                render={({ field, fieldState }) => (
+                  <>
+                    <label htmlFor={field.instalacja}>Instalacja</label>
+                    <InputSwitch
+                      inputId={field.instalacja}
+                      checked={field.value}
+                      inputRef={field.ref}
+                      onChange={(e) => field.onChange(e.value)}
+                    />
+                  </>
+                )}
+              />
 
-            <button
-              disabled={isLoading ? true : false}
-              className={classNames(styles.btn, {
-                [styles.loading]: isLoading,
-              })}
-              type="submit"
-            >
-              Dostać odpowiedź
-            </button>
+              <Controller
+                name="zamek"
+                control={control}
+                render={({ field, fieldState }) => (
+                  <>
+                    <label htmlFor={field.zamek}>Drzwi z zamkiem</label>
+                    <InputSwitch
+                      inputId={field.zamek}
+                      checked={field.value}
+                      inputRef={field.ref}
+                      onChange={(e) => field.onChange(e.value)}
+                    />
+                  </>
+                )}
+              />
+            </div>
+
+            <Button
+              isLoading={isLoading}
+              type={"submit"}
+              btnText={"Oblicz koszt"}
+            />
           </form>
         </div>
       </div>

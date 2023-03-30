@@ -64,13 +64,13 @@ export const Consult = () => {
 
   const onSubmit = async (data) => {
     load();
+    console.log(data);
     try {
       await FormService.send(data);
       setTimeout(() => {
         showSuccess();
         reset();
       }, 1000);
-      console.log(data);
     } catch (error) {
       setTimeout(() => {
         showError();
@@ -85,8 +85,9 @@ export const Consult = () => {
       <div className={styles.wrapper}>
         <div className={styles.formWrapper}>
           <p className={styles.subtitle}>
-            Okno pod klucz wraz z pomiarem, dostawą i montażem z rabatem 10% +
-            moskitiera w prezencie!
+            Okno pod klucz wraz z pomiarem, dostawą i montażem z rabatem{" "}
+            <span className={styles.green}>10%</span> + gwarancja{" "}
+            <span className={styles.green}>2</span> lata!
           </p>
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.flex}>
@@ -110,7 +111,10 @@ export const Consult = () => {
                         )}
                         onChange={(e) => field.onChange(e.target.value)}
                       />
-                      <label style={{ color: "#acb4c3" }} htmlFor={field.name}>
+                      <label
+                        style={{ color: "var(--dark)" }}
+                        htmlFor={field.name}
+                      >
                         Imię
                       </label>
                     </span>
@@ -139,7 +143,10 @@ export const Consult = () => {
                         value={field.value}
                         mask="+48 (999) 999-999"
                       />
-                      <label style={{ color: "#acb4c3" }} htmlFor={field.phone}>
+                      <label
+                        style={{ color: "var(--dark)" }}
+                        htmlFor={field.phone}
+                      >
                         Telefon
                       </label>
                     </span>

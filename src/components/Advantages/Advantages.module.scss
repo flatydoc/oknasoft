@@ -11,7 +11,7 @@
       var(--background) 0%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    url(../../assets/images/bg.jpg);
+    url(../../assets/images/111.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -49,8 +49,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
+  // justify-content: flex-end;
+
   min-height: 300px;
   padding: 20px;
 
@@ -61,19 +61,7 @@
 
   &:hover {
     backdrop-filter: blur(5px);
-
-    .cardSubtitle {
-      height: 100px;
-      transform: translateY(-50px);
-    }
-
-    .cardTitle {
-      transform: translateY(-70px);
-    }
-    .cardImg {
-      transform: translateY(-200px);
-      opacity: 0;
-    }
+    transform: scale(105%);
   }
 }
 
@@ -81,12 +69,13 @@
   color: #fff;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 20px;
 
   transition: all 0.5s ease;
 }
 
 .cardImg {
-  margin: 20px 0;
+  margin-bottom: 20px;
 
   width: 60px;
   height: 60px;
@@ -99,7 +88,7 @@
   height: 0;
   color: #fff;
   line-height: 120%;
-  transform: translateY(300px);
+  // transform: translateY(300px);
   padding-top: 20px;
 
   transition: all 0.5s ease;
@@ -132,21 +121,52 @@
 }
 
 @media (max-width: 576px) {
-  .wrapper {
-    padding: 20px 50px;
+  // .wrapper {
+  //   padding: 20px 20px;
+  //   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  //   grid-template-columns: 1fr;
+  // }
 
+  .card {
+    min-height: 250px;
+  }
+
+  .cardTitle {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .cardImg {
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardSubtitle {
+    padding-top: 10px;
+
+    transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 20px 20px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 200px;
+    text-align: center;
+    align-items: center;
   }
 }
 
 @media (max-width: 400px) {
   .advantages {
     padding-top: 60px;
-  }
-
-  .wrapper {
-    padding: 20px 20px;
   }
 
   .title {

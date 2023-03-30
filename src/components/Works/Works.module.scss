@@ -1,5 +1,6 @@
 .works {
   padding: 80px 100px 50px 100px;
+  background-color: var(--light);
 }
 
 .title {
@@ -8,6 +9,10 @@
   font-weight: 900;
   text-align: center;
   color: var(--dark);
+}
+
+.img {
+  padding: 20px;
 }
 
 @media (max-width: 768px) {

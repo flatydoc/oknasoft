@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/oknasoft/static/css/main.aa23be7a.css",
-    "main.js": "/oknasoft/static/js/main.50910e13.js",
+    "main.css": "/oknasoft/static/css/main.c2ccce5e.css",
+    "main.js": "/oknasoft/static/js/main.424015f7.js",
     "static/media/head_video.mp4": "/oknasoft/static/media/head_video.2968216feacc8798f3f0.mp4",
+    "static/media/example.jpg": "/oknasoft/static/media/example.916cf78e1f59e6120518.jpg",
     "static/media/111.jpg": "/oknasoft/static/media/111.530387442235a565e451.jpg",
     "static/media/primeicons.svg": "/oknasoft/static/media/primeicons.e1441b135b3ca9ad643c.svg",
-    "static/media/main_bg.jpeg": "/oknasoft/static/media/main_bg.ca1056f686cf1e92cf05.jpeg",
+    "static/media/5.jpg": "/oknasoft/static/media/5.4616e2aaffba82a011e3.jpg",
+    "static/media/6.jpg": "/oknasoft/static/media/6.9b9d503565f53acd50df.jpg",
+    "static/media/4.jpg": "/oknasoft/static/media/4.f8e50c4b0fe997507f90.jpg",
+    "static/media/7.jpg": "/oknasoft/static/media/7.b89c259caddad2a7152f.jpg",
+    "static/media/1.jpg": "/oknasoft/static/media/1.c6e16912f310fea9378b.jpg",
+    "static/media/9.jpg": "/oknasoft/static/media/9.53d13cdb1286ae7201b0.jpg",
     "static/media/primeicons.eot": "/oknasoft/static/media/primeicons.d44157bdfa026dc877af.eot",
     "static/media/primeicons.woff": "/oknasoft/static/media/primeicons.10d3152104f2208ac82a.woff",
     "static/media/primeicons.ttf": "/oknasoft/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/8.jpg": "/oknasoft/static/media/8.9ceb887478e87d09bfcf.jpg",
+    "static/media/2.jpg": "/oknasoft/static/media/2.a703daab70991b98520f.jpg",
+    "static/media/3.jpg": "/oknasoft/static/media/3.3ac93b4682c21c1739b3.jpg",
     "static/media/window.svg": "/oknasoft/static/media/window.7bb368a6589fc9698959f7ccde7fe17f.svg",
     "static/media/reviews.svg": "/oknasoft/static/media/reviews.6f8d8fc2bdf27ae1dac8a022169e5bcc.svg",
     "static/media/consult.svg": "/oknasoft/static/media/consult.529ac38df94d8e6ff100504b74c33332.svg",
@@ -28,11 +37,11 @@
     "static/media/phone.svg": "/oknasoft/static/media/phone.9f913cb2485c7a064d59b3195b7c33ac.svg",
     "static/media/phone_white.svg": "/oknasoft/static/media/phone_white.e725dab4bb2dec040df425d20c96c908.svg",
     "static/media/cross.svg": "/oknasoft/static/media/cross.4aa9c0d367a718b38dbc.svg",
-    "main.aa23be7a.css.map": "/oknasoft/static/css/main.aa23be7a.css.map",
-    "main.50910e13.js.map": "/oknasoft/static/js/main.50910e13.js.map"
+    "main.c2ccce5e.css.map": "/oknasoft/static/css/main.c2ccce5e.css.map",
+    "main.424015f7.js.map": "/oknasoft/static/js/main.424015f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa23be7a.css",
-    "static/js/main.50910e13.js"
+    "static/css/main.c2ccce5e.css",
+    "static/js/main.424015f7.js"
   ]
 }

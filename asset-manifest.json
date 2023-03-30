@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/oknasoft/static/css/main.c2ccce5e.css",
+    "main.css": "/oknasoft/static/css/main.d3d514bf.css",
     "main.js": "/oknasoft/static/js/main.424015f7.js",
     "static/media/head_video.mp4": "/oknasoft/static/media/head_video.2968216feacc8798f3f0.mp4",
     "static/media/example.jpg": "/oknasoft/static/media/example.916cf78e1f59e6120518.jpg",
@@ -37,11 +37,11 @@
     "static/media/phone.svg": "/oknasoft/static/media/phone.9f913cb2485c7a064d59b3195b7c33ac.svg",
     "static/media/phone_white.svg": "/oknasoft/static/media/phone_white.e725dab4bb2dec040df425d20c96c908.svg",
     "static/media/cross.svg": "/oknasoft/static/media/cross.4aa9c0d367a718b38dbc.svg",
-    "main.c2ccce5e.css.map": "/oknasoft/static/css/main.c2ccce5e.css.map",
+    "main.d3d514bf.css.map": "/oknasoft/static/css/main.d3d514bf.css.map",
     "main.424015f7.js.map": "/oknasoft/static/js/main.424015f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2ccce5e.css",
+    "static/css/main.d3d514bf.css",
     "static/js/main.424015f7.js"
   ]
 }

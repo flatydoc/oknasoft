@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+// import { HashRouter } from "react-router-dom";
 
 import { Layout } from "./views/Layout/Layout";
 
@@ -7,7 +7,7 @@ import { HomePage } from "./pages/HomePage/HomePage";
 
 export const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -16,6 +16,6 @@ export const App = () => {
           </Route>
         </Routes>
       </>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
